@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form tag</title>
+</head>
+<body>
+    <center>
+        <h1><u><em>STUDENT INNOVATION REGISTRATION</em></u></h1>
+        <p><strong>"Where ideas meet imagination"</strong></p>
+    </center>
+    <hr>
+  
+    <centre>
+    <a href="#personal">Personal Details</a> |
+    <a href="#academic">Academic Information</a> |
+    <a href="#innovation">Innovation Details</a> |
+    <a href="#performance">Performance</a>
+    </center>
+
+    <hr>
+
+    <form action="#" method="POST">
+        <fieldset id="personal">
+            <legend><strong>Personal Details</strong></legend>
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </p>
+            <p>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" required placeholder="abcxyz@gmail.com">
+            </p>
+            <p>
+                <label for="num">Mobile Number:</label>
+                <input type="tel" name="number" id="num" required placeholder="10 digit number" size="10">
+            </p>
+            <p>
+                <label for="gen">Gender:</label>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <input type="radio" name="gender" value="Other">Others
+            </p>
+        </fieldset>
+        <fieldset id="academic">
+
+            <legend><strong>Academic Information</strong></legend>
+            <label for="dep">Department:</label>
+            <select id="dep">
+                <option value="#">--Select--</option>
+                <option value="cs">Computer Science</option>
+                <option value="it">Information Technology</option>
+                <option value="ds">Data Science</option>
+                <option value="ai">Artificial Intelligence</option>
+            </select>
+            <p>
+                <label for="study">Year of Study:</label>
+                <input type="radio" name="year">FY
+                <input type="radio" name="year">SY
+                <input type="radio" name="year">TY
+            </p>
+            <p>
+                <label for="roll">Roll Number:</label>
+                <input type="text" id="roll" name="roll">
+            </p>
+        </fieldset>
+        <fieldset id="innovation">
+            <legend><strong> Innovation Details</strong></legend>
+            <p>
+                <label for="p_title">Project Title</label>
+                <input type="text" id="p_title" name="title" placeholder="Title of your project" size="50">
+            </p>
+            <p>
+                <label>Domain:</label>
+                <input type="radio" name="domain" value="AI">AI
+                <input type="radio" name="domain" value="Healthcare">Healthcare
+                <input type="radio" name="domain" value="Sustainability">Sustainability
+                <input type="radio" name="domain" value="Education">Education
+            </p>
+            <p>
+                <label for="idea">Idea Description:</label><br>
+                <textarea id="idea" rows="4" cols="60" placeholder="Explain your ideas in details"></textarea>
+            </p>
+            <p>
+             
+                <label for="inno">Innovation Level:</label>
+
+                <select id="inno">
+                  <option>Beginner</option>
+                  <option>Intermediate</option>
+                  <option>Advanced</option>
+                </select>
+
+            </p>
+        </fieldset>
+        <fieldset id="performance">
+            <legend><strong>Performances</strong></legend>
+            <p>
+                <label for="date">Presentation Date:</label><br>
+                <input type="date" name="date" id="date">
+            </p>
+            <p>
+                <label for="slot">Time Slot Preference</label>
+                <input type="time" id="slot">:to: <input type="time">
+            </p>
+            <p>
+                <label for="mode">Mode</label>
+                <input type="radio" name="mode" id="mode">Offline
+                <input type="radio" name="mode" id="mode">Online
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><strong> Declaration</strong></legend>
+            <p>
+                <input type="checkbox">I confirm that the information provided is correct.
+                <input type="checkbox">I agree to follow The event guidelines.
+            </p>
+            <details>
+                <summary><em>View Guidelines</em></summary>
+                <p>Participants must bring valid ID. Ideas should be......</p>
+            </details>
+            <center>
+                <input type="submit" value="Submit Form">
+                <input type="submit" value=" Reset">
+            </center>
+            <center>
+                <p><small><cite>Designed using ONLY HTML - no CSS , no JAVASCRIPT</cite></small></p>
+                
+            </center>
+        </fieldset>
+    </form>
+</body>
+</html>
